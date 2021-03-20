@@ -17,6 +17,7 @@
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -25,6 +26,7 @@
 <body>
     <div class="message-text">
         <h1>Coming Soon!</h1>
+        <h2>Email dalton.s.baker@gmail.com with questions</h2>
     </div>
 </body>
 
