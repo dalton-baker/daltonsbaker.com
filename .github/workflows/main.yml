@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.drdoomsalot-music.com
+        server: 66.96.162.135
         port: 2222
         username: daltonsbaker-publish
         password: ${{ secrets.daltonsbaker_password }}
