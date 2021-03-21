@@ -71,8 +71,9 @@ body {
 }
 
 #repository-content, #example-content, #contact-content, #default-content {
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     margin: 10px;
 }
 
@@ -93,4 +94,40 @@ body {
 #example-tog:checked~#menu-content #default-content, 
 #contact-tog:checked~#menu-content #default-content {
     display: none;
+}
+
+#gitlab-link, #github-link, #metalsmarket-link, #normal-link{
+    background-color: rgba(255,255,255,.12);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    transition: 0.3s;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 10px 10px;
+}
+
+#gitlab-link:hover, #github-link:hover, #metalsmarket-link:hover, #normal-link:hover {
+    background-color: rgba(255,255,255,.16);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+#gitlab-link img, #github-link img, #metalsmarket-link img{
+    border-radius: 10px 10px 0px 0px;
+    height: 200px;
+    width: 300px;
+}
+
+#gitlab-link div, #github-link div, #metalsmarket-link div{
+    padding: 10px;
+}
+
+#normal-link{
+    padding: 10px
 }
