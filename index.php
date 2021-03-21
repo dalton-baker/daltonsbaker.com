@@ -11,28 +11,26 @@
 </head>
 
 <body>
-    <div class="title-div">
-        <div class="title">Dalton Baker</div>
-        <div class="sub-title">Computer Science B.S. at SDSM&T</div>
-    </div>
-
-    <div id="portfolio">
-        <input type="radio" name="menu_toggle" id="repository-tog">
-        <input type="radio" name="menu_toggle" id="example-tog">
-        <input type="radio" name="menu_toggle" id="contact-tog">
-
-        <div id="menu-bar">
-            <label for="repository-tog" id="repository-label" tabindex="1">Git Repositories</label>
-            <label for="example-tog" id="example-label" tabindex="2">Examples Of Work</label>
-            <label for="contact-tog" id="contact-label" tabindex="3">Contact Info</label>
+    <div id="title-div">
+        <div id="title-info">
+            <div id="title">Dalton Baker</div>
+            <div id="sub-title">Computer Science B.S. at SDSM&T</div>
         </div>
 
-        <div id="menu-content">
-            <div id="default-content">
-                <p>Welcome to my portfolio</p>
-            </div>
+        <div id="contact-info">
+            <a href="mailto: dalton.s.baker@gmail.com" id="normal-link">
+                <div><i class="fa fa-google"></i>&nbsp; dalton.s.baker@gmail.com</div>
+            </a>
+            <a href="https://www.linkedin.com/in/dalton-baker/" id="normal-link">
+                <div><i class="fa fa-linkedin"></i>&nbsp; LinkdIn</div>
+            </a>
+        </div>
+    </div>
 
-            <div id="repository-content">
+    <div id="contnet-div">
+        <div id="repostitories">
+            <div id="title">Repositories</div>
+            <div id="cont">
                 <a href="https://gitlab.com/dalton_baker" id="gitlab-link">
                     <img src="./assets/gitlab.jpg">
                     <div><i class="fa fa-gitlab"></i>&nbsp; Gitlab</div>
@@ -42,8 +40,11 @@
                     <div><i class="fa fa-github"></i>&nbsp; Github</div>
                 </a>
             </div>
+        </div>
 
-            <div id="example-content">
+        <div id="examples">
+            <div id="title">Examples Of Work</div>
+            <div id="cont">
                 <a href="https://metalsmarketdisplay.com" id="metalsmarket-link">
                     <img src="./assets/metalsmarketdisplay.jpg">
                     <div>metalsmarketdisplay.com</div>
@@ -51,18 +52,6 @@
                 <a href="https://dakotahstaxes.com/" id="github-link">
                     <img src="./assets/dakotahtaxes.jpg">
                     <div>dakotahstaxes.com</div>
-                </a>
-            </div>
-
-            <div id="contact-content">
-                <a href="https://www.linkedin.com/in/dalton-baker/" id="normal-link">
-                    <div><i class="fa fa-linkedin"></i>&nbsp; LinkdIn</div>
-                </a>
-            </div>
-
-            <div id="contact-content">
-                <a href="mailto: dalton.s.baker@gmail.com" id="normal-link">
-                    <div><i class="fa fa-google"></i>&nbsp; dalton.s.baker@gmail.com</div>
                 </a>
             </div>
         </div>

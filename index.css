@@ -6,95 +6,55 @@ body {
     color: white;
 }
 
-.title-div {
-    margin: 10px;
+#title-div {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.title {
+#title-div #title {
     font-size: 5em;
 }
 
-.sub-title {
+#title-div #sub-title {
     font-size: 1.3em;
 }
 
-#portfolio {
+#title-info{
+    flex:1;
+}
+
+#title-info, #contact-info{
+    padding: 10px;
+}
+
+#contnet-div{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#repostitories, #examples{
     display: flex;
     flex-direction: column;
+    padding: 50px 10px;
 }
 
-#portfolio input {
-    display: none;
+#repostitories #title, #examples #title{
+    padding: 10px;
+    font-size: 1.7em;
+    text-align: center;
 }
 
-#menu-bar {
+#repostitories #cont, #examples #cont{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    padding: 10px;
     flex-wrap: wrap;
-    border-bottom: 4px solid white;
-    margin: 10px;
-}
-
-#menu-bar label {
-    flex: 1;
-    height: 24px;
-    min-width: 250px;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 10px 10px 10px 10px;
-    outline: none;
-    justify-content: center;
-    align-items: flex-end;
-    display: flex;
-}
-
-#menu-bar label:hover {
-    font-size: 24px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#menu-content{
-    width: 100%;
-    height: 100%;
-}
-
-#repository-content, #example-content, #contact-content{
-    display: none;
-}
-
-#default-content{
-    display: flex;
-    flex-direction: column;
-}
-
-#repository-content, #example-content, #contact-content, #default-content {
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 10px;
 }
 
-#repository-tog:checked~#menu-bar #repository-label, 
-#example-tog:checked~#menu-bar #example-label, 
-#contact-tog:checked~#menu-bar #contact-label {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#repository-tog:checked~#menu-content #repository-content, 
-#example-tog:checked~#menu-content #example-content, 
-#contact-tog:checked~#menu-content #contact-content {
-    display: flex;
-}
-
-#repository-tog:checked~#menu-content #default-content, 
-#example-tog:checked~#menu-content #default-content, 
-#contact-tog:checked~#menu-content #default-content {
-    display: none;
-}
 
 #gitlab-link, #github-link, #metalsmarket-link, #normal-link{
     background-color: rgba(255,255,255,.12);
